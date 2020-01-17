@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignment1';
+  ServerName="Apollo";
+  ServerPid=10;
+  ServerStatus="Null";
+  StatusFlag=true;
+  changeStatus()
+  {
+    if(this.StatusFlag===false)
+    {
+        this.ServerStatus="Offline";
+    }
+    else{
+      this.ServerStatus="Online";
+    }
+    return this.ServerStatus;
+  }
 }
