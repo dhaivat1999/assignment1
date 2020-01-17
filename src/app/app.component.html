@@ -1,5 +1,16 @@
-<h1>Welcome to assignment 1</h1>
-<p>Server name {{ServerName}} with Pid {{ServerPid}} is {{changeStatus()}} </p>
+<h1>Information related to the server</h1>
+<input type="text" name="ServerName" [(ngModel)]="ServerName">
+<p>{{ServerName}}</p>
+<p>{{ServerPid}}</p>
+<p>{{ServerStatus}}</p>
+<button type="button" class="btn btn-primary" (click)="changeStatus()">Change Status of Server</button>
 <app-red></app-red>
 <app-yellow></app-yellow>
 <app-green></app-green>
+
+
+<h1>Assignment 2</h1>
+<input type="text" name="firstName" [(ngModel)]="firstName">
+<p>{{firstName}}</p>
+<Button type="button" class="btn btn-danger" (click)="resetString()" [disabled]="checkStatus()">Reset the String</Button>
+<p>{{message}}</p>

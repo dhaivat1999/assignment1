@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { RedComponent } from './red/red.component';
 import { GreenComponent } from './green/green.component';
 import { YellowComponent } from './yellow/yellow.component';
-
+import { FormsModule } from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +16,8 @@ import { YellowComponent } from './yellow/yellow.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
